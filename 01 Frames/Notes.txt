@@ -1,0 +1,42 @@
+### **JFrame in Java Swing**
+
+- **Definition**: Represents a window with standard decorations (title, borders, buttons).
+- **Top-level Container**: Used to create graphical user interfaces (GUIs) in Swing applications.
+
+### **Creating a JFrame**
+- Import: `import javax.swing.*;`
+- Basic Structure:
+  ```java
+  JFrame frame = new JFrame("Title"); // Create a JFrame with a title
+  // Set properties and components
+  frame.setVisible(true); // Make it visible
+  ```
+
+### **Key Methods and Properties**
+- **Title**: `setTitle("Title")`
+- **Size**: `setSize(width, height)`
+- **Visibility**: `setVisible(true/false)`
+- **Close Operation**: `setDefaultCloseOperation(operation)`
+- **Layout**: `setLayout(layoutManager)`
+- **Adding Components**: `add(component)`
+
+### **Example Usage**
+```java
+JFrame frame = new JFrame("My JFrame");
+frame.setSize(400, 300);
+frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+JLabel label = new JLabel("Hello, Swing!");
+frame.add(label); // Add components to the frame
+
+frame.setVisible(true);
+```
+
+### **Advanced Features**
+- **Menus**: JMenuBar, JMenu, JMenuItem for creating menus.
+- **Listeners**: Attach listeners for user interactions.
+- **Panels and Layouts**: Use JPanel with different layout managers for organizing components.
+
+### **Best Practices**
+- Create Swing components on the Event Dispatch Thread (EDT).
+- Maintain separation between GUI components and application logic for ease of maintenance.
