@@ -1,0 +1,40 @@
+### **JLabel in Java Swing**
+
+- **Definition**: A GUI component to display text, images, or both.
+- **Usage**: Ideal for showing non-editable, brief, or informative messages.
+
+### **Creating a JLabel**
+- **Basic Structure**:
+  ```java
+  JLabel label = new JLabel("Text");
+  label.setIcon(icon); // Optional: Set an icon
+  ```
+
+### **Common Methods and Properties**
+- **Text**: `setText("Text")` sets the label text.
+- **Icon**: `setIcon(icon)` sets an image icon.
+- **Text Position**: `setHorizontalTextPosition(position)` and `setVerticalTextPosition(position)` set text position relative to the icon.
+- **Text Color**: `setForeground(Color)` sets the text color.
+- **Font**: `setFont(font)` sets the font of the text.
+- **Gap between Text and Icon**: `setIconTextGap(gap)` sets the gap between text and icon.
+- **Background Color**: `setBackground(Color)` sets the background color.
+- **Border**: `setBorder(border)` sets a border around the label.
+- **Opaque**: `setOpaque(true/false)` makes the background color visible.
+
+### **Example Usage**
+```java
+JLabel label = new JLabel("Do you like to code?");
+label.setIcon(image); // image is an ImageIcon object
+label.setHorizontalTextPosition(JLabel.CENTER);
+label.setVerticalTextPosition(JLabel.TOP);
+label.setForeground(Color.WHITE);
+label.setFont(new Font("Arial", Font.BOLD, 16));
+label.setIconTextGap(5);
+label.setBackground(Color.BLACK);
+label.setOpaque(true);
+label.setBorder(border);
+```
+
+### **Best Practices**
+- Use JLabels for displaying non-editable text or images.
+- Maintain consistency in font, color, and design across labels for better UI appearance.
